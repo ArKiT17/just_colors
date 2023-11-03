@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Додавання кольорів</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+  <h2>Create new color</h2>
+  <form onsubmit="addColorForm(event)">
+    <div class="input-element">
+      <div class="label">
+        <label for="colorInput">Color:</label>
+        <span class="error" id="colorError"></span>
+      </div>
+      <input type="text" name="color" id="colorInput" required>
+    </div>
+    <div class="input-element">
+      <label for="typeInput">Type:</label><br>
+      <select id="typeInput">
+        <option value="rgb">RGB</option>
+        <option value="rgba">RGBA</option>
+        <option value="hex">HEX</option>
+      </select>
+    </div>
+    <div class="input-element">
+      <div class="label">
+        <label for="codeInput">Code:</label>
+        <span class="error" id="codeError"></span>
+      </div>
+      <input type="text" name="code" id="codeInput" required>
+    </div>
+    <input class="btn" type="submit" value="Save">
+    <button class="btn btn-delete" type="button" onclick="deleteColors()">Delete all</button>
+  </form>
+  <h2>All colors</h2>
+  <div id="colors"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

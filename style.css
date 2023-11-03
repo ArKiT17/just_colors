@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    background-color: #fbf2e9;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    margin: 30px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+form {
+    width: 25%;
+}
+
+label, input, select, button {
+    font-size: 22px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.btn {
+    background-color: #ffe023;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background-color: #917500;
+    color: #fff;
+}
+
+.btn-delete {
+    background-color: #ff3232;
+    color: white;
+}
+
+.btn-delete:hover {
+    background-color: #9f1d1d;
+}
+
+select {
+    width: 100%;
+}
+
+input, select {
+    padding: 5px;
+}
+
+.error {
+    color: red;
+    font-size: 20px;
+    white-space: normal;
+    margin-left: 15px;
+}
+
+.input-element {
+    margin-bottom: 15px;
+}
+
+.label {
+    display: flex;
+    justify-content: space-between;
+}
+
+#colors {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-bottom: 50px;
+    justify-content: center;
+    gap: 30px;
+}
+
+.color-main {
+    width: 25%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.color-label {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
