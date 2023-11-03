@@ -85,7 +85,7 @@ input, select {
     display: flex;
     flex-wrap: wrap;
     width: 80%;
-    margin-bottom: 50px;
+    margin: 0 30px 50px;
     justify-content: center;
     gap: 30px;
 }
